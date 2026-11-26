@@ -61,6 +61,10 @@
 - Удовлетворённость: DA + MBON (плюс), OCT + SER (минус) (ам. 7).
 
 ## Лог
+- 2026-11-26 (RELEASE): WatchingFlyCPP v1.0.0, portable ZIP 770 735 байт,
+  SHA256 `cd19e539…689bc3`; тег `v1.0.0`; GitHub **draft**-релиз с ZIP и
+  `SHA256SUMS.txt`; данные FlyWire (CC BY-NC 4.0) не включены; публикация
+  draft — по команде владельца.
 - 2026-11-26 (GITHUB): проект оформлен как Git-репозиторий, лицензия кода MIT,
   репозиторий `EgoriyPrivatBank/fly-connectome-sim` (с 2026-11-26 — public по
   команде владельца): 43 файла, ~167 KiB, ветка main, 6 topics; данные/exe/out/

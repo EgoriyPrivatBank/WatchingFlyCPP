@@ -128,3 +128,27 @@
 - Notes: `RELEASE_NOTES.md`.
 - Ассеты: `WatchingFlyCPP-v1.0.0-win64.zip` (0.74 МБ), `SHA256SUMS.txt`.
 - `gh release create ... --draft`; public release — только по отдельной команде.
+
+## 2026-11-26 — R7 (draft-релиз)
+
+- Коммит `e1049e4` (Record release archive checksums), запушен.
+- Tag **v1.0.0** (annotated) на `e1049e4`, запушен.
+- Draft Release создан:
+  `https://github.com/EgoriyPrivatBank/WatchingFlyCPP/releases/tag/untagged-7efacc7edc73528eb813`
+  (после публикации — `/releases/tag/v1.0.0`).
+- Ассеты:
+  - `WatchingFlyCPP-v1.0.0-win64.zip` — 770 735 байт,
+    SHA256 `cd19e539…689bc3`;
+  - `SHA256SUMS.txt` — 185 байт.
+- `gh release view`: `isDraft: true`; asset digest zip =
+  `sha256:cd19e539…689bc3`.
+- Скачивание ассетов из draft: zip 770 735 байт, SHA256 совпал; обе строки
+  `SHA256SUMS.txt` верны. Временная папка удалена.
+- Публикация (draft=false) **не выполнялась**.
+
+## 2026-11-26 — R8 (итог)
+
+- Change `release-package` архивирован; задачи закрыты.
+- Итог: draft-релиз v1.0.0, пакет 0.74 МБ, проверен на чистой папке.
+- Осталось владельцу: опубликовать draft (по команде), при желании подписать exe.
+  Данные FlyWire не включены; лицензия CC BY-NC 4.0.
