@@ -108,3 +108,23 @@
 - Прямой запуск exe с длинным Unicode-путём в `FLYSIM_FFMPEG`/`--video`
   по-прежнему не работает (narrow ANSI/UTF-8 в коде). Для пользователей это
   закрыто 8.3-путями в start-скриптах; менять код в этой задаче нельзя.
+
+## 2026-11-26 — R6 (архив и SHA256)
+
+- ZIP: `out\release\WatchingFlyCPP-v1.0.0-win64.zip`, **0.74 МБ**.
+- SHA256 ZIP: `cd19e53904a7155f922c62ac3aa8cba04152b2c0bf571d3584da523181689bc3`.
+- SHA256 exe: `ac124cdc0be17460738bd3b547ed234ee2e813f5bacc473a5ae5d00aa567f78a`.
+- `SHA256SUMS.txt`:
+  - в пакете — только exe (хеш архива нельзя положить внутрь самого архива);
+  - в `out\release\` — отдельный файл с ZIP + exe для релиза.
+- ZIP содержит верхнюю папку `WatchingFlyCPP-v1.0.0-win64\`, включая пустые
+  `data\`/`tools\`.
+- Распаковка во `%TEMP%`: хеш exe совпал, `tools\` на месте, CSV/bin/log/mp4 —
+  0. Временная папка удалена.
+
+### R7 — план (ждёт подтверждения)
+- Тег: `v1.0.0` (annotated) на коммит после записи R6 в журнал.
+- Заголовок: `WatchingFlyCPP v1.0.0`.
+- Notes: `RELEASE_NOTES.md`.
+- Ассеты: `WatchingFlyCPP-v1.0.0-win64.zip` (0.74 МБ), `SHA256SUMS.txt`.
+- `gh release create ... --draft`; public release — только по отдельной команде.
