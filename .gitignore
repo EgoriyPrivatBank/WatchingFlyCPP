@@ -1,0 +1,41 @@
+# Build artifacts
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+*.dll
+*.lib
+*.a
+*.bin
+*.log
+
+# Data: connectome CSV, local toolchain, old backup (never commit)
+*.csv
+neyron/
+tools/
+project-fly-neyrons_backup_v3/
+
+# Runtime outputs (video, metrics, reports, baselines, audit backups)
+out/
+*.mp4
+*.webm
+*.mkv
+
+# Generated knowledge graph (rebuild with graphify)
+graphify-out/
+
+# Local environment, secrets, temporary files
+.vscode/
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+*.tmp
+*.temp
+*.swp
+*.zip
+msdownld.tmp
+Thumbs.db
+.DS_Store
