@@ -62,8 +62,9 @@
 
 ## Лог
 - 2026-11-26 (GITHUB): проект оформлен как Git-репозиторий, лицензия кода MIT,
-  private-репозиторий `EgoriyPrivatBank/fly-connectome-sim`: 43 файла, ~167 KiB,
-  ветка main, 6 topics; данные/exe/out/tools не включены; клон-проверка пройдена.
+  репозиторий `EgoriyPrivatBank/fly-connectome-sim` (с 2026-11-26 — public по
+  команде владельца): 43 файла, ~167 KiB, ветка main, 6 topics; данные/exe/out/
+  tools не включены; клон-проверка пройдена.
 - 2026-11-26 (АУДИТ/ОПТИМИЗАЦИЯ): пути к данным/тулчейну стали относительными
   (`..\neyron`, `..\tools`, `FLYSIM_FFMPEG`/`FLYSIM_YTDLP`), добавлены `--dir` и
   `--cache`; создан `check.bat` и эталоны `out/baseline/metrics_seed42_20s_*`,
