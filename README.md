@@ -1,6 +1,6 @@
-# Цифровая муха: симуляция мозга мухи, смотрящего видео
+# WatchingFlyCPP — симуляция мозга мухи, смотрящего видео
 
-Репозиторий: https://github.com/EgoriyPrivatBank/fly-connectome-sim
+Репозиторий: https://github.com/EgoriyPrivatBank/WatchingFlyCPP
 
 Симуляция на C++ **полного оцифрованного коннектома ЦНС мухи** (FlyWire/Princeton):
 **166 700 нейронов, 6 242 118 уникальных связей, 89 860 280 синапсов** — реальные
@@ -33,11 +33,23 @@ Dorkenwald et al., *Nature* 634, 124–138 (2024),
 (требует локальные видео и эталон, см. «Проверка»). Репозиторий не содержит
 данных, видео, exe и кэша.
 
+## Скачать (готовый пакет)
+
+Готовый Windows-пакет: [Releases](https://github.com/EgoriyPrivatBank/WatchingFlyCPP/releases).
+Скачайте `WatchingFlyCPP-v1.0.0-win64.zip` и `SHA256SUMS.txt`, сверьте SHA256
+(`certutil -hashfile WatchingFlyCPP-v1.0.0-win64.zip SHA256`) и распакуйте.
+Внутри — `README_RU.txt`, запуск без компилятора. Подробности:
+[RELEASE_NOTES.md](RELEASE_NOTES.md).
+
+Пакет не содержит данные и инструменты: CSV — по инструкции ниже, ffmpeg/yt-dlp —
+через `setup_tools.ps1` внутри пакета.
+
 ## Зависимости
 
 - Windows 10/11 x64 (Winsock, winmm).
-- MinGW-W64 g++ 16.2.0 (UCRT/POSIX/SEH), ffmpeg N-127957, yt-dlp 2026.10.21 —
-  портативные в `..\tools\` (в репозиторий не входят).
+- MinGW-W64 g++ 16.2.0 (UCRT/POSIX/SEH); ffmpeg (BtbN; в пакете `setup_tools.ps1`
+  ставит актуальную GPL-сборку) и yt-dlp (в пакете — 2026.11.23) — в `..\tools\`
+  или внутри пакета, в репозиторий не входят.
 - Для YouTube нужен интернет; без JS-рантайма yt-dlp доступен ограниченный
   набор форматов (480p достаточно для глаза 320×180).
 
