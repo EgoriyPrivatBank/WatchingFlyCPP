@@ -98,3 +98,16 @@
 - `G5.1`: логин есть; имя репозитория, описание и видимость ждут решения.
   Предложение: `fly-connectome-sim`, private, описание
   "Whole-brain Drosophila connectome simulation watching video".
+
+### Итог G4
+- Коммиты: `a65f088`, `63ea8fc`, `b78730d`; автор
+  `EgoriyPrivatBank <139873688+EgoriyPrivatBank@users.noreply.github.com>`.
+- Отслеживается **43 файла**, объекты **161.4 KiB**, `git status` чистый.
+- Remote пока нет. Тегов нет.
+
+### G5 — блокер
+- `gh` 2.106.0 установлен в `C:\Program Files\GitHub CLI\gh.exe`.
+- `gh auth status` → **не авторизован**. Нужен интерактивный
+  `gh auth login` владельца (браузер/HTTPS); токены в файлы/чат не пишем.
+- После авторизации: создать **private** `fly-connectome-sim` без push,
+  показать remote и план, затем push после подтверждения.
