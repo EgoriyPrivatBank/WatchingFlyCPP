@@ -111,3 +111,28 @@
   `gh auth login` владельца (браузер/HTTPS); токены в файлы/чат не пишем.
 - После авторизации: создать **private** `fly-connectome-sim` без push,
   показать remote и план, затем push после подтверждения.
+
+## 2026-11-26 — G5 (GitHub) и G6 (проверка)
+
+### G5
+- `gh auth status`: вошёл `EgoriyPrivatBank`, scopes `gist`, `read:org`, `repo`,
+  `workflow`; токен не сохранялся в файлы/чат.
+- `gh auth setup-git` выполнен.
+- Создан **private** репозиторий:
+  [EgoriyPrivatBank/fly-connectome-sim](https://github.com/EgoriyPrivatBank/fly-connectome-sim).
+- Описание: `Whole-brain Drosophila connectome simulation watching video`.
+- Topics: `drosophila`, `connectome`, `computational-neuroscience`, `cpp`,
+  `flywire`, `simulation`.
+- Push: `main` → `origin/main`, 4 коммита, 43 файла, ~167 KiB; ветка `main`.
+
+### G6
+- `gh repo view`: visibility **PRIVATE**, default branch **main**, URL верный.
+- `git ls-remote`: `refs/heads/main` = `dd41932…`.
+- Клон в `%TEMP%\flysim_clone_test`: 43 файла; `src/`, README, LICENSE, build.bat,
+  check.bat на месте; exe/csv/bin/log/out/tools/backup — **0**.
+- `build.bat` в клоне без инструментов: корректная ошибка
+  `ERROR: g++ not found ... or PATH`, exit 1; полная сборка не запускалась.
+- Временный клон удалён.
+
+### Public
+Репозиторий остаётся **PRIVATE**. Public не переключался.
